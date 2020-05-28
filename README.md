@@ -46,7 +46,7 @@ You should see a code that then will be used to get the access token.
 
 For test slack interaction with server  locally need to do some stuff:
 
-• Go to https://api.slack.com/apps for creating a bot app.
+Go to https://api.slack.com/apps for creating a bot app.
 After created get all credentials: 
 `Signing Secret`
 `Verification Token` 
@@ -54,18 +54,20 @@ After created get all credentials:
 `Bot User OAuth Access Token`
 `Client Secret`
 
-- In `https://api.slack.com/apps/<my-slack-app-id>/oauth` add different scopes
+• In `https://api.slack.com/apps/<my-slack-app-id>/oauth` add different scopes:
 
-`channels:read`
-`chat:write`
-`commands`
-`groups:read`
-`im:read`
-`im:write`
-`mpim:read`
-`reminders:write` 
+```
+channels:read
+chat:write
+commands
+groups:read
+im:read
+im:write
+mpim:read
+reminders:write
+```
 
-- In `https://api.slack.com/apps/<my-slack-app-id>/slash-commands` 
+• In `https://api.slack.com/apps/<my-slack-app-id>/slash-commands` 
 you can add some commands to the bot like `givefeedback` and need to set up a entry point URL. We need to use [ngrok](https://ngrok.com/) for testing see this --> https://slack.dev/node-slack-sdk/tutorials/local-development#what-is-a-request-URL
 
 We use `bolt-js` npm to run this: https://github.com/slackapi/bolt-js 
