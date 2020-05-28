@@ -6,9 +6,9 @@ The intention of this is make a proof of concept and have something running
 
 In this repo there are 2 parts that need to be unified in some point, still working on that.
 
-## 1 Authentication flow
+## 1. Authentication flow
 
-For this we need to have murmur / web-gateway / perf-api locally I use (perform-cli)[https://github.com/cultureamp/perform-cli]
+For this we need to have murmur / web-gateway / perf-api locally I use [perform-cli](https://github.com/cultureamp/perform-cli)
 
 Behind the murmur in the rails conosole, create a doorkeeper app.
 
@@ -42,7 +42,7 @@ run `node src/server.js` to get listening a express server.
 run `node src/env.js` to get the url to authorize and open it.
 You should see a code that then will be used to get the access token. 
 
-## 2 Communication between slack and server (don't user authentication yet)
+## 2. Communication between slack and server (don't user authentication yet)
 
 For test slack interaction with server  locally need to do some stuff:
 
@@ -55,6 +55,7 @@ After created get all credentials:
 `Client Secret`
 
 - In `https://api.slack.com/apps/<my-slack-app-id>/oauth` add different scopes
+
 `channels:read`
 `chat:write`
 `commands`
@@ -64,9 +65,8 @@ After created get all credentials:
 `mpim:read`
 `reminders:write` 
 
-- In `https://api.slack.com/apps/<my-slack-app-id>/slash-commands` you can add some commands to the bot like:
-`givefeedback` and need to set up a entry point URL. We need to use (ngrok)[https://ngrok.com/] for testing
-see this --> https://slack.dev/node-slack-sdk/tutorials/local-development#what-is-a-request-URL
+- In `https://api.slack.com/apps/<my-slack-app-id>/slash-commands` 
+you can add some commands to the bot like `givefeedback` and need to set up a entry point URL. We need to use [ngrok](https://ngrok.com/) for testing see this --> https://slack.dev/node-slack-sdk/tutorials/local-development#what-is-a-request-URL
 
 We use `bolt-js` npm to run this: https://github.com/slackapi/bolt-js 
 
