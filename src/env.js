@@ -28,13 +28,13 @@
    
 
 // This is the secret of the doorkeeper app response
-const secret_doorkeeper = "4c4239d1cddef71d80dfa639eaa04bf3a851bacde0fb5676781971aeeb20ef47"
+const secret_doorkeeper = "..."
 
 // This is the uid of the doorkeeper app response
-const client_id = "049af6c95327a3f8c6a9e7f7adcc9d197bcaf45cad31d12ea319021e6ef24ae4"
+const client_id = "..."
 
 // This is the id of the doorkeeper app response
-const app_id = "5ed0429e088bf305830dc0f5"
+const app_id = "..."
 
 // This is the redirect url of the doorkeeper app
 const redirect_uri = "http://localhost:2000/authentication"
